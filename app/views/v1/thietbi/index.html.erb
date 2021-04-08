@@ -1,0 +1,26 @@
+<a href='/v1/thietbi'>Thiet bi</a>
+<a href='/v1/nhacungcap'>Nha cung cap</a>
+<a href='/v1/nhasanxuat'>Nha san xuat</a>
+<a href='/v1/loaithietbi'>Loai thiet bi</a>
+
+
+<h1>Danh sach thiet bi</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Summary</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @thietbi.each do |thietbi| %>
+  <tr>
+    <td><%= thietbi.id_thietbi %></td>
+    <td><%= thietbi.tenthietbi %></td>
+    <td><%# link_to "Edit", edit_book_path(book) %></td>
+    <td><%# link_to "Remove", book, method: :delete, data: { confirm: "Are you sure?" } %></td>
+  </tr>
+  <% end %>
+</table>

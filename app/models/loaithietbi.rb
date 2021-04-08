@@ -1,0 +1,2 @@
+class Loaithietbi < ApplicationRecord
+end

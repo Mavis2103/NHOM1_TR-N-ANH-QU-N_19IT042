@@ -1,2 +1,25 @@
-<h1>V1::Nhacungcaps#index</h1>
-<p>Find me in app/views/v1/nhacungcaps/index.html.erb</p>
+<a href='/v1/thietbi/index'>Thiet bi</a>
+<a href='/v1/nhacungcaps/index'>Nha cung cap</a>
+<a href='/v1/nhasanxuat/index'>Nha san xuat</a>
+<a href='/v1/loaithietbi/index'>Loai thiet bi</a>
+<h1>Danh sach nha cung cap</h1>
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>ten</th>
+    <th>diachi</th>
+    <th>sdt</th>
+  </tr>
+
+  <% @nhacungcaps.each do |nhacungcap| %>
+  <tr>
+    <td><%= nhacungcap.id_nhacungcap %></td>
+    <td><%= nhacungcap.tennhacungcap %></td>
+    <td><%= nhacungcap.diachi %></td>
+    <td><%= nhacungcap.sdt %></td>
+    <td><%# link_to "Edit", edit_book_path(book) %></td>
+    <td><%# link_to "Remove", book, method: :delete, data: { confirm: "Are you sure?" } %></td>
+  </tr>
+  <% end %>
+</table>

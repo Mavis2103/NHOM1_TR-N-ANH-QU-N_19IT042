@@ -10,6 +10,7 @@
     <th>tenloai</th>
     <th>donvitinh</th>
     <th>ghichu</th>
+    <th>ngay tao</th>
   </tr>
 
   <% @loaithietbis.each do |loaithietbi| %>
@@ -18,6 +19,7 @@
     <td><%= loaithietbi.tenloai %></td>
     <td><%= loaithietbi.donvitinh %></td>
     <td><%= loaithietbi.ghichu %></td>
+    <td><%= loaithietbi.created_at %></td>
   </tr>
   <% end %>
 </table>
